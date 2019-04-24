@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pip-Boy</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="ID">Personal Information</string>
+    <string name="gender">Gender</string>
+    <string name="fName">First Name</string>
+    <string name="lName">Last Name</string>
+    <string name="species">Species</string>
+    <string name="age">Age</string>
+    <string name="classType">Class</string>
+    <string name="profilePicture">Profile Picture</string>
+    <string name="buttonGenerate">Generate!</string>
+    <string name="buttonFile">File</string>
+</resources>
