@@ -55,14 +55,14 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autofillHints=""
                     android:hint="@string/prompt_password"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:singleLine="true"
-                    android:autofillHints="" />
+                    android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -76,13 +76,16 @@
                 android:textStyle="bold"
                 tools:text="Sign in to your Google account" />
 
+            <ImageView
+                android:id="@+id/vaultBoyPic"
+                android:layout_width="match_parent"
+                android:layout_height="261dp"
+                android:contentDescription="@string/picture_of_vault_boy"
+                android:translationX="-20dp"
+                android:translationY="0dp"
+                app:srcCompat="@drawable/vaultboy" />
+
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/picture_of_vault_boy"
-        app:srcCompat="@drawable/vaultboy" />
 </LinearLayout>
