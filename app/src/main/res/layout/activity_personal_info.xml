@@ -27,10 +27,9 @@
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonGenerate"
@@ -50,8 +49,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
+        app:layout_constraintTop_toBottomOf="@+id/age"
         tools:background="@color/colorPrimary" />
 
     <EditText
@@ -65,22 +63,22 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:cursorVisible="true"
-        android:editable="true"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:singleLine="true"
         android:soundEffectsEnabled="true"
         android:text="@string/name"
         android:textColor="@color/colorPrimary"
         android:textColorLink="@color/colorPrimary"
+        android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PersonalInformation"
         app:layout_constraintVertical_bias="0.0"
-        tools:soundEffectsEnabled="false"
-        android:importantForAutofill="no" />
+        tools:soundEffectsEnabled="false" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -88,7 +86,7 @@
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
@@ -105,11 +103,12 @@
         android:layout_height="28dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:text="@string/MALE"
         android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:visibility="visible"
@@ -117,7 +116,7 @@
         app:layout_constraintEnd_toStartOf="@+id/seekBar"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstnamebox"
+        app:layout_constraintTop_toTopOf="@+id/seekBar"
         app:layout_constraintVertical_bias="0.0"
         tools:text="@string/MALE" />
 
@@ -127,11 +126,12 @@
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:text="@string/FEMALE"
         android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="monospace"
         android:visibility="visible"
@@ -139,7 +139,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/seekBar"
-        app:layout_constraintTop_toBottomOf="@+id/firstnamebox"
+        app:layout_constraintTop_toTopOf="@+id/seekBar"
         app:layout_constraintVertical_bias="0.0"
         tools:text="@string/FEMALE" />
 
@@ -175,7 +175,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="number"
+        android:text="@string/age"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
         android:typeface="monospace"
@@ -184,8 +186,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/classType"
         app:layout_constraintVertical_bias="0"
-        tools:text="@string/age"
-        android:importantForAutofill="no" />
+        tools:text="@string/age" />
 
     <TextView
         android:id="@+id/ageText"
@@ -197,15 +198,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:text="@string/classType"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/classType"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.004"
         tools:text="@string/classType" />
 
 
