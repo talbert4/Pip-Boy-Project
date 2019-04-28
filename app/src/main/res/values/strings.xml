@@ -12,15 +12,22 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="ID">Personal Information</string>
-    <string name="gender">Gender</string>
-    <string name="fName">First Name</string>
-    <string name="lName">Last Name</string>
-    <string name="species">Species</string>
-    <string name="age">Age</string>
-    <string name="classType">Class</string>
+    <string name="ID">PERSONAL INFORMATION</string>
+    <string name="gender">GENDER</string>
+    <string name="name">NAME</string>
+    <string name="age">AGE</string>
+    <string name="classType">CLASS</string>
     <string name="profilePicture">Profile Picture</string>
-    <string name="buttonGenerate">Generate!</string>
-    <string name="buttonFile">File</string>
+    <string name="buttonGenerate">CONFIRM</string>
+    <string name="buttonFile">FILE</string>
     <string name="picture_of_vault_boy">Picture of Vault Boy</string>
+    <string name="MALE">MALE</string>
+    <string name="FEMALE">FEMALE</string>
+    <string-array name="classTypeList">
+        <item><string name="hunter">HUNTER</string></item>
+        <item><string name="thief">THIEF</string></item>
+        <item><string name="soldier">SOLDIER</string></item>
+        <item><string name="engineer">ENGINEER</string></item>
+        <item><string name="cs">CS MAJOR</string></item>
+    </string-array>
 </resources>
