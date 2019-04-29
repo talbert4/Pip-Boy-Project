@@ -17,7 +17,9 @@
         <activity android:name=".personal_info"
             android:screenOrientation="landscape">
         </activity>
-        <activity android:name=".main_screen" />
+        <activity
+            android:name=".main_screen"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
