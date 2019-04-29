@@ -20,7 +20,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TabAdapter adapter;
+    public TabAdapter adapter;
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager = (ViewPager) findViewById(R.id.container);
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        viewPager = findViewById(R.id.container);
+        tabLayout = findViewById(R.id.tabs);
         adapter = new TabAdapter(getSupportFragmentManager());
         adapter.addFragment(new StatFragment(), "Stats");
         adapter.addFragment(new HealthFragment(), "Health");
