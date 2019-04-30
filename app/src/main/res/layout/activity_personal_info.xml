@@ -232,6 +232,8 @@
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
@@ -243,7 +245,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/agebox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/agebox"
         app:layout_constraintTop_toTopOf="@+id/agebox"
         app:layout_constraintVertical_bias="0.0" />
 

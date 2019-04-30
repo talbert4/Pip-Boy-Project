@@ -11,32 +11,39 @@
         android:background="#000000">
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/levelbox"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:background="@color/colorPrimaryDark"
             android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/levelbox"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
-            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintBottom_toBottomOf="@+id/hpbox"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView10"
-            app:layout_constraintTop_toTopOf="@+id/textView10"
-            app:layout_constraintVertical_bias="1.0"
-            tools:text="LEVEL 125" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/hpbox"
+            app:layout_constraintTop_toTopOf="@+id/hpbox"
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/endnum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:editable="false"
             android:ems="10"
-            android:gravity="center"
+            android:freezesText="true"
+            android:gravity="start|center_vertical"
             android:inputType="number"
+            android:text="0"
             android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
             android:textStyle="bold"
             android:typeface="monospace"
             app:layout_constraintBottom_toBottomOf="@+id/endurance"
@@ -46,12 +53,14 @@
             app:layout_constraintTop_toTopOf="@+id/endurance" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/lucknum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:editable="false"
             android:ems="10"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
             android:inputType="number"
+            android:text="0"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -62,12 +71,14 @@
             app:layout_constraintTop_toTopOf="@+id/luck" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/charnum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:editable="false"
             android:ems="10"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
             android:inputType="number"
+            android:text="0"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -78,12 +89,14 @@
             app:layout_constraintTop_toTopOf="@+id/charisma" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/dexnum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:editable="false"
             android:ems="10"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
             android:inputType="number"
+            android:text="0"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -96,7 +109,7 @@
 
         <TextView
             android:id="@+id/luck"
-            android:layout_width="129dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
@@ -104,7 +117,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="@string/luck"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -115,11 +129,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/endurance"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="Luck" />
+            tools:text="@string/luck" />
 
         <TextView
             android:id="@+id/endurance"
-            android:layout_width="129dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
@@ -127,7 +141,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="@string/endurance"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -138,11 +153,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/charisma"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="Endurance" />
+            tools:text="@string/endurance" />
 
         <TextView
             android:id="@+id/charisma"
-            android:layout_width="129dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
@@ -150,7 +165,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="@string/charisma"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -161,7 +177,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/agility"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="Charisma" />
+            tools:text="@string/charisma" />
 
         <ImageView
             android:id="@+id/tobereplaced"
@@ -207,7 +223,7 @@
 
         <TextView
             android:id="@+id/intelligence"
-            android:layout_width="129dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
@@ -215,7 +231,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="@string/brain"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -226,11 +243,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.301"
-            tools:text="Brain" />
+            tools:text="@string/brain" />
 
         <TextView
             android:id="@+id/strength"
-            android:layout_width="129dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
@@ -238,7 +255,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="@string/strength"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -249,11 +267,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/intelligence"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="Strength" />
+            tools:text="@string/strength" />
 
         <TextView
             android:id="@+id/agility"
-            android:layout_width="129dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
@@ -261,7 +279,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="@string/agility"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -272,15 +291,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/strength"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="Agility" />
+            tools:text="@string/agility" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/intnum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:editable="false"
             android:ems="10"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
             android:inputType="number"
+            android:text="0"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -288,15 +309,18 @@
             app:layout_constraintEnd_toStartOf="@+id/tobereplaced"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/intelligence"
-            app:layout_constraintTop_toTopOf="@+id/intelligence" />
+            app:layout_constraintTop_toTopOf="@+id/intelligence"
+            tools:text="0" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/strnum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:editable="false"
             android:ems="10"
-            android:gravity="center"
+            android:gravity="start|center_vertical"
             android:inputType="number"
+            android:text="0"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -307,7 +331,7 @@
             app:layout_constraintTop_toTopOf="@+id/strength" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/hpbox"
             android:layout_width="202dp"
             android:layout_height="24dp"
             android:layout_marginStart="8dp"
@@ -318,6 +342,8 @@
             android:layout_marginBottom="8dp"
             android:background="@color/colorPrimaryDark"
             android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/hpbox"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:typeface="monospace"
@@ -326,8 +352,54 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            tools:text="HP 115/115" />
+            app:layout_constraintVertical_bias="0.953" />
+
+        <TextView
+            android:id="@+id/namebox"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Nick"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/agebox"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start|center_vertical"
+            android:text="19"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namebox"
+            app:layout_constraintVertical_bias="0.068" />
+
     </android.support.constraint.ConstraintLayout>
 
 </RelativeLayout>
