@@ -12,26 +12,24 @@ import android.widget.Button;
 
 public class HealthFragment extends Fragment {
 
-    Button quest = (Button)
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_health, container, false);
 
-        Button quest = (Button) rootView.findViewById(R.id.quest);
-        quest.setOnClickListener((v) -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://prairielearn.engr.illinois.edu/pl/course_instance/20716/assessments"));
-            startActivity(browserIntent);
+        Button button = (Button) rootView.findViewById(R.id.quest);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://prairielearn.engr.illinois.edu/pl/course_instance/20716/assessments";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
         });
 
         return rootView;
-
-
-    }
-
-    /*public void goQuest(View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://prairielearn.engr.illinois.edu/pl/course_instance/20716/assessments"));
-        startActivity(browserIntent);*/
     }
 }
 
