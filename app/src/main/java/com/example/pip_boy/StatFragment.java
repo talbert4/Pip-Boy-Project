@@ -45,10 +45,10 @@ public class StatFragment extends Fragment {
         TextView classType = (TextView) rootView.findViewById(R.id.classBox);
         TextView name = (TextView) rootView.findViewById(R.id.namebox);
         TextView age = (TextView) rootView.findViewById(R.id.agebox);
-        name.setText(MainActivity.name);
-        age.setText(MainActivity.age);
-        gender.setText(MainActivity.gender);
-        classType.setText(MainActivity.classType);
+        name.setText("NAME: " + MainActivity.name);
+        age.setText("AGE: " + MainActivity.age);
+        gender.setText("GENDER: " + MainActivity.gender);
+        classType.setText("CLASS: " + MainActivity.classType);
         return rootView;
 
     }
