@@ -21,6 +21,7 @@
             android:paddingLeft="10dp"
             android:text="@string/levelbox"
             android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:typeface="monospace"
             app:layout_constraintBottom_toBottomOf="@+id/hpbox"
@@ -200,7 +201,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/vaultboy" />
 
-        <TextView
+        <DigitalClock
             android:id="@+id/clock"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
@@ -213,7 +214,7 @@
             android:ems="10"
             android:gravity="center_horizontal|center_vertical"
             android:inputType="time"
-            android:text="10:30"
+            android:text="Clock"
             android:textColor="@color/colorPrimary"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -339,7 +340,7 @@
         <TextView
             android:id="@+id/hpbox"
             android:layout_width="202dp"
-            android:layout_height="24dp"
+            android:layout_height="46dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
@@ -351,6 +352,7 @@
             android:paddingLeft="10dp"
             android:text="@string/hpbox"
             android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:typeface="monospace"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -451,6 +453,83 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/agebox2"
             app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/namebox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/namebox"
+            app:layout_constraintTop_toTopOf="@+id/namebox"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/age"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/agebox2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/namebox"
+            app:layout_constraintTop_toTopOf="@+id/agebox"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/classType"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/agebox2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/namebox"
+            app:layout_constraintTop_toTopOf="@+id/agebox2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/gender"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/agebox3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/namebox"
+            app:layout_constraintTop_toTopOf="@+id/agebox3"
+            app:layout_constraintVertical_bias="1.0" />
 
     </android.support.constraint.ConstraintLayout>
 
