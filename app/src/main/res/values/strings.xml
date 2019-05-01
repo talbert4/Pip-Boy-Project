@@ -30,6 +30,11 @@
         <item><string name="engineer">ENGINEER</string></item>
         <item><string name="cs">CS MAJOR</string></item>
     </string-array>
+    <string-array name="genderList">
+        <item><string name="male">MALE</string></item>
+        <item><string name="female">FEMALE</string></item>
+        <item><string name="other">OTHER</string></item>
+    </string-array>
     <string name="title_activity_main">MainActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>

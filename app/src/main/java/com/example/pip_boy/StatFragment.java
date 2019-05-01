@@ -15,19 +15,7 @@ public class StatFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_stat, container, false);
-        /*
-        // read from intent as per website
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            String name = extras.getString("key");
-            //The key argument here must match that used in the other activity
-        }
-         */
-
-
-
-
-
+        //generate random numbers
         Random random = new Random();
         int randomNumber = random.nextInt(100);
         TextView brain = (TextView) rootView.findViewById(R.id.intnum);
@@ -53,8 +41,14 @@ public class StatFragment extends Fragment {
         endurance.setText(String.valueOf(randomNumber4));
         luck.setText(String.valueOf(randomNumber5));
 
+        TextView gender = (TextView) rootView.findViewById(R.id.genderBox);
+        TextView classType = (TextView) rootView.findViewById(R.id.classBox);
         TextView name = (TextView) rootView.findViewById(R.id.namebox);
         TextView age = (TextView) rootView.findViewById(R.id.agebox);
+        name.setText(MainActivity.name);
+        age.setText(MainActivity.age);
+        gender.setText(MainActivity.gender);
+        classType.setText(MainActivity.classType);
         return rootView;
 
     }

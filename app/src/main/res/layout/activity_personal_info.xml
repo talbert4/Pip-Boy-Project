@@ -79,18 +79,22 @@
         app:layout_constraintTop_toTopOf="@+id/namebox"
         tools:soundEffectsEnabled="false" />
 
-    <Switch
-        android:id="@+id/seekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@color/colorPrimary"
+        android:entries="@array/genderList"
         app:layout_constraintBottom_toBottomOf="@+id/male"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
-        app:layout_constraintStart_toEndOf="@+id/male"
-        app:layout_constraintTop_toTopOf="@+id/male" />
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/male"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/male"
@@ -111,7 +115,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/firstnamebox"
-        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/namebox"
         app:layout_constraintVertical_bias="0.0"
@@ -132,31 +136,27 @@
         android:textStyle="bold"
         android:typeface="monospace"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+        app:layout_constraintBottom_toBottomOf="@+id/genderSpinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/seekBar"
-        app:layout_constraintTop_toTopOf="@+id/seekBar"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/genderSpinner"
+        app:layout_constraintTop_toTopOf="@+id/genderSpinner"
         tools:text="@string/FEMALE" />
 
     <Spinner
         android:id="@+id/classType"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:dropDownWidth="match_parent"
         android:entries="@array/classTypeList"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="@+id/ageText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/ageText"
-        app:layout_constraintTop_toTopOf="@+id/ageText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/genderSpinner"
+        app:layout_constraintStart_toStartOf="@+id/genderSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/genderSpinner"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -176,7 +176,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/female"
-        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/male"
         app:layout_constraintVertical_bias="0.0"
@@ -199,10 +199,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PersonalInformation"
-        app:layout_constraintVertical_bias="0.016"
+        app:layout_constraintVertical_bias="0.028"
         tools:text="@string/name" />
 
     <TextView
@@ -222,7 +222,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ageText"
         app:layout_constraintVertical_bias="0.0"
@@ -232,8 +232,6 @@
         android:id="@+id/inputAge"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
@@ -244,8 +242,8 @@
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="@+id/agebox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toEndOf="@+id/agebox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstnamebox"
         app:layout_constraintTop_toTopOf="@+id/agebox" />
 
 

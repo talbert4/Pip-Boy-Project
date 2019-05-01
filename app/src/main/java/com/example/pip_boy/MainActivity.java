@@ -36,8 +36,29 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new MapFragment(), "Map");
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
-        String name = getIntent().getStringExtra("name");
-        String age = getIntent().getStringExtra("age");
-
+        String name = (String) getIntent().getStringExtra("name");
+        String age = (String) getIntent().getStringExtra("age");
+        String gender = (String) getIntent().getStringExtra("gender");
+        String classType = (String) getIntent().getStringExtra("class");
+        setAge(age);
+        setName(name);
+        setClass(classType);
+        setGender(gender);
     }
+    private void setAge(String setAge) {
+        age = setAge;
+    }
+    public static String age;
+    private void setName(String setName) {
+        name = setName;
+    }
+    public static String name;
+    private void setGender(String setGender) {
+        gender = setGender;
+    }
+    public static String gender;
+    private void setClass(String setClass) {
+        classType = setClass;
+    }
+    public static String classType;
 }
