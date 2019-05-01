@@ -32,9 +32,12 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabs);
         adapter = new TabAdapter(getSupportFragmentManager());
         adapter.addFragment(new StatFragment(), "Stats");
-        adapter.addFragment(new HealthFragment(), "Health");
+        adapter.addFragment(new HealthFragment(), "Quest");
         adapter.addFragment(new MapFragment(), "Map");
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        String name = getIntent().getStringExtra("name");
+        String age = getIntent().getStringExtra("age");
+
     }
 }

@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <Button
         android:id="@+id/buttonGenerate"
@@ -49,13 +49,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
         tools:background="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/firstnamebox"
-        android:layout_width="260dp"
-        android:layout_height="39dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -76,7 +77,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/namebox"
         app:layout_constraintTop_toTopOf="@+id/namebox"
-        app:layout_constraintVertical_bias="0.0"
         tools:soundEffectsEnabled="false" />
 
     <Switch
@@ -199,10 +199,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PersonalInformation"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.016"
         tools:text="@string/name" />
 
     <TextView
@@ -229,7 +229,7 @@
         tools:text="@string/age" />
 
     <EditText
-        android:id="@+id/age"
+        android:id="@+id/inputAge"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
@@ -246,8 +246,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toEndOf="@+id/agebox"
-        app:layout_constraintTop_toTopOf="@+id/agebox"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/agebox" />
 
 
 </android.support.constraint.ConstraintLayout>

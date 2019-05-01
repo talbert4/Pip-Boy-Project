@@ -6,18 +6,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import java.time.Clock;
-import android.widget.DigitalClock;
-
-
-
 import java.util.Random;
 
 public class StatFragment extends Fragment {
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_stat, container, false);
+        /*
+        // read from intent as per website
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String name = extras.getString("key");
+            //The key argument here must match that used in the other activity
+        }
+         */
+
+
+
+
+
         Random random = new Random();
         int randomNumber = random.nextInt(100);
         TextView brain = (TextView) rootView.findViewById(R.id.intnum);
@@ -42,6 +52,9 @@ public class StatFragment extends Fragment {
         charisma.setText(String.valueOf(randomNumber3));
         endurance.setText(String.valueOf(randomNumber4));
         luck.setText(String.valueOf(randomNumber5));
+
+        TextView name = (TextView) rootView.findViewById(R.id.namebox);
+        TextView age = (TextView) rootView.findViewById(R.id.agebox);
         return rootView;
 
     }
